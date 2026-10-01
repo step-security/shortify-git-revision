@@ -1,5 +1,18 @@
 version: 2
 updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+    reviewers:
+      - "rlespinasse"
+    labels: [ ]
+version: 2
+updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
